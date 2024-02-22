@@ -1,0 +1,99 @@
+
+
+.hero-description p{
+   font-size: 50px;
+   line-height: 1.2;
+}
+
+.hero-description p span{
+    color: #fff;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.hero-social-icon img{
+    height: 100%;
+    width: 100%;
+}
+
+.dynamic-text{
+    font-size: 50px;
+    color: orange;
+    height: 90px;
+   line-height: 90px;
+    
+   overflow: hidden;
+
+}
+.dynamic-text li{
+color: orange;
+list-style: none;
+font-size: 50px;
+position: relative;
+top: 0;
+animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+    100%{
+       top: -270px;
+    }
+}
+.dynamic-text li span{
+    position: relative;
+}
+
+
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:transparent;
+    border-left: 2px solid;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@media (max-width: 800px) {
+    .hero-container{
+        flex-direction: column-reverse;
+        margin: 20px 50px;
+    }
+      .hero-description, .hero-right{
+        flex: 100%;
+     
+      }
+.hero-social-icon{
+    width: 10%;
+}
+
+.hero-social-icon  img{
+    width: 100%;
+}
+      .hero-right .profile-picture{
+        /* height: 200px;
+        width: 200px; */
+        display: none;
+      }
+
+      
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 600px) { 
+    .hero-right .profile-picture{
+        height: 100px;
+        width: 100px;
+        margin: 10px 0 0 0  ;
+      }
+    /* STYLES HERE */
+}
