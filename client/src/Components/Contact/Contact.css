@@ -1,0 +1,14 @@
+@media (max-width: 800px){
+    .contact-details{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-left .contact-right{
+        flex: 100%;
+    }
+
+    .contact-right {
+        height: 500px;
+    }
+}

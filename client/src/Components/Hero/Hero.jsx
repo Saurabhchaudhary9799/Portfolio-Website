@@ -91,16 +91,56 @@ const Hero = () => {
             marginTop: "40px",
           }}
         >
-          <Box width={"20%"} height={"100%"} className="hero-social-icon">
+          <Box
+            as={motion.div}
+            whileHover={{
+              border: "1px solid white",
+              padding: "20px",
+              borderRadius: "50%",
+            }}
+            width={"20%"}
+            height={"100%"}
+            className="hero-social-icon"
+          >
             <img src="/src/assets/github.png" alt="" />
           </Box>
-          <Box width={"20%"} height={"100%"} className="hero-social-icon">
+          <Box
+            as={motion.div}
+            whileHover={{
+              border: "1px solid white",
+              padding: "20px",
+              borderRadius: "50%",
+            }}
+            width={"20%"}
+            height={"100%"}
+            className="hero-social-icon"
+          >
             <img src="/src/assets/instagram.png" alt="" />
           </Box>
-          <Box width={"20%"} height={"100%"} className="hero-social-icon">
+          <Box
+            as={motion.div}
+            whileHover={{
+              border: "1px solid white",
+              padding: "20px",
+              borderRadius: "50%",
+            }}
+            width={"20%"}
+            height={"100%"}
+            className="hero-social-icon"
+          >
             <img src="/src/assets/linkedin.png" alt="" />
           </Box>
-          <Box width={"20%"} height={"100%"} className="hero-social-icon">
+          <Box
+            as={motion.div}
+            whileHover={{
+              border: "1px solid white",
+              padding: "20px",
+              borderRadius: "50%",
+            }}
+            width={"20%"}
+            height={"100%"}
+            className="hero-social-icon"
+          >
             <img src="/src/assets/twitter.png" alt="" />
           </Box>
         </Box>
